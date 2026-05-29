@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArzMediaVogue Photo Delivery</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1f1f1f;
+            background:
+                radial-gradient(circle at top left, rgba(126,184,246,0.18), transparent 28%),
+                radial-gradient(circle at top right, rgba(229,107,66,0.16), transparent 26%),
+                linear-gradient(135deg, #f8f6fb 0%, #f1eef8 45%, #f8f7fb 100%);
+        }
+
+        .top-bar {
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #7eb8f6 0%, #8f5fb3 50%, #e56b42 100%);
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 28px 16px 60px;
+        }
+
+        .hero-shell {
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid rgba(255, 255, 255, 0.88);
+            border-radius: 28px;
+            box-shadow: 0 18px 45px rgba(77, 61, 112, 0.10);
+            padding: 22px 20px 24px;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+
+        .brand-logo {
+            width: min(210px, 65vw);
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            border-radius: 12px;
+        }
+
+        .brand-name {
+            font-size: 17px;
+            font-weight: 700;
+            color: #2b2b2b;
+            margin-top: 4px;
+        }
+
+        .hero h1 {
+            margin: 14px 0 8px;
+            font-size: 44px;
+            line-height: 1.04;
+            font-weight: 800;
+        }
+
+        .hero p {
+            margin: 0;
+            font-size: 18px;
+            color: #5a5a5a;
+        }
+
+        .name-pill {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, rgba(126,184,246,0.14), rgba(143,95,179,0.14), rgba(229,107,66,0.14));
+            border: 1px solid rgba(143,95,179,0.18);
+            color: #5d4388;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .download-all-wrap {
+            margin-top: 18px;
+        }
+
+        .download-all-button {
+            display: inline-block;
+            padding: 13px 24px;
+            border-radius: 999px;
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+            background: linear-gradient(90deg, #7b5bc7, #e56b42);
+            box-shadow: 0 12px 24px rgba(143,95,179,0.22);
+        }
+
+        .qr-section {
+            margin-top: 18px;
+        }
+
+        .qr-section img {
+            width: 115px;
+            height: 115px;
+            border-radius: 12px;
+            background: white;
+            padding: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .gallery-title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: #3f3f3f;
+            margin: 2px 0 20px;
+        }
+
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 22px;
+        }
+
+        .photo-card {
+            width: 260px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 12px;
+            box-shadow: 0 16px 38px rgba(77, 61, 112, 0.10);
+        }
+
+        .photo-number {
+            font-size: 15px;
+            font-weight: 700;
+            color: #464646;
+            margin-bottom: 10px;
+        }
+
+        .photo-frame {
+            width: 236px;
+            height: 295px;
+            margin: 0 auto;
+            background: #f2eef5;
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .photo-frame img {
+            display: block;
+            width: 236px;
+            height: 295px;
+            object-fit: cover;
+        }
+
+        .download-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 14px;
+            margin-top: 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 700;
+            color: white;
+            background: linear-gradient(90deg, #7b5bc7 0%, #e56b42 100%);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 36px;
+            color: #666666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar"></div>
+
+    <div class="page">
+        <div class="hero-shell">
+            
+        <div class="logo-wrap">
+            <img src="arzmedia_logo.png" alt="Arz Media Logo" class="brand-logo">
+        </div>
+        
+            <div class="brand-name">ArzMediaVogue</div>
+
+            <div class="hero">
+                <h1>Your Photos Are Ready</h1>
+                <p>View and download your session photos below</p>
+                <div class="name-pill">Session_012</div>
+
+                <div class="download-all-wrap">
+                    <a class="download-all-button" href="Session_012_All_Photos.zip" download="Session_012_All_Photos.zip">
+                        Download All Photos
+                    </a>
+                </div>
+
+                <div class="qr-section">
+                    <img src="qr_code.png" alt="QR Code">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-title">Your photo gallery</div>
+
+        <div class="photo-grid">
+            
+        <div class="photo-card">
+            <div class="photo-number">Photo 1</div>
+            <div class="photo-frame">
+                <img class="gallery-image" src="Session_012_1.png" alt="Photo 1">
+            </div>
+            <a class="download-button" href="Session_012_1.png" download="Session_012_1.png">Download Photo</a>
+
+            <button class="download-button"
+                onclick="printOnePhoto('Session_012_1.png')"
+                style="border:none; cursor:pointer;">
+                Print This Photo
+            </button>
+        </div>
+        
+        <div class="photo-card">
+            <div class="photo-number">Photo 2</div>
+            <div class="photo-frame">
+                <img class="gallery-image" src="Session_012_2.png" alt="Photo 2">
+            </div>
+            <a class="download-button" href="Session_012_2.png" download="Session_012_2.png">Download Photo</a>
+
+            <button class="download-button"
+                onclick="printOnePhoto('Session_012_2.png')"
+                style="border:none; cursor:pointer;">
+                Print This Photo
+            </button>
+        </div>
+        
+        <div class="photo-card">
+            <div class="photo-number">Photo 3</div>
+            <div class="photo-frame">
+                <img class="gallery-image" src="Session_012_3.png" alt="Photo 3">
+            </div>
+            <a class="download-button" href="Session_012_3.png" download="Session_012_3.png">Download Photo</a>
+
+            <button class="download-button"
+                onclick="printOnePhoto('Session_012_3.png')"
+                style="border:none; cursor:pointer;">
+                Print This Photo
+            </button>
+        </div>
+        
+        <div class="photo-card">
+            <div class="photo-number">Photo 4</div>
+            <div class="photo-frame">
+                <img class="gallery-image" src="Session_012_4.png" alt="Photo 4">
+            </div>
+            <a class="download-button" href="Session_012_4.png" download="Session_012_4.png">Download Photo</a>
+
+            <button class="download-button"
+                onclick="printOnePhoto('Session_012_4.png')"
+                style="border:none; cursor:pointer;">
+                Print This Photo
+            </button>
+        </div>
+        
+        <div class="photo-card">
+            <div class="photo-number">Photo 5</div>
+            <div class="photo-frame">
+                <img class="gallery-image" src="Session_012_5.png" alt="Photo 5">
+            </div>
+            <a class="download-button" href="Session_012_5.png" download="Session_012_5.png">Download Photo</a>
+
+            <button class="download-button"
+                onclick="printOnePhoto('Session_012_5.png')"
+                style="border:none; cursor:pointer;">
+                Print This Photo
+            </button>
+        </div>
+        
+        </div>
+
+        <div class="footer">
+            Thank you for choosing ArzMediaVogue
+        </div>
+    </div>
+
+    <script>
+function printOnePhoto(fileName) {
+
+    let printWindow = window.open("", "_blank");
+
+    printWindow.document.write(`
+        <html>
+        <head>
+            <title>Print Photo</title>
+            <style>
+
+                @page{
+                    margin:0;
+                }
+
+                body{
+                    margin:0;
+                    padding:0;
+                    overflow:hidden;
+                    background:black;
+                }
+
+                img{
+                    width:100vw;
+                    height:100vh;
+                    object-fit:fill;
+                    display:block;
+                    margin:0;
+                }
+
+            </style>
+        </head>
+        <body>
+            <img src="` + fileName + `">
+        </body>
+        </html>
+    `);
+
+    printWindow.document.close();
+
+    printWindow.onload = function() {
+        printWindow.print();
+    };
+}
+</script>
+
+</body>
+</html>
