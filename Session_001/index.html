@@ -97,19 +97,6 @@
             box-shadow: 0 12px 24px rgba(143,95,179,0.22);
         }
 
-        .qr-section {
-            margin-top: 18px;
-        }
-
-        .qr-section img {
-            width: 115px;
-            height: 115px;
-            border-radius: 12px;
-            background: white;
-            padding: 8px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-        }
-
         .gallery-title {
             text-align: center;
             font-size: 18px;
@@ -196,16 +183,7 @@
                 <h1>Your Photos Are Ready</h1>
                 <p>View and download your session photos below</p>
                 <div class="name-pill">Session_001</div>
-
-                <div class="download-all-wrap">
-                    <a class="download-all-button" href="Session_001_All_Photos.zip" download="Session_001_All_Photos.zip">
-                        Download All Photos
-                    </a>
-                </div>
-
-                <div class="qr-section">
-                    <img src="qr_code.png" alt="QR Code">
-                </div>
+                
             </div>
         </div>
 
@@ -216,12 +194,12 @@
         <div class="photo-card">
             <div class="photo-number">Photo 1</div>
             <div class="photo-frame">
-                <img class="gallery-image" src="Session_001_1.png" alt="Photo 1">
+                <img class="gallery-image" src="Session_001_1.jpg" alt="Photo 1">
             </div>
-            <a class="download-button" href="Session_001_1.png" download="Session_001_1.png">Download Photo</a>
+            <a class="download-button" href="Session_001_1.jpg" download="Session_001_1.jpg">Download Photo</a>
 
             <button class="download-button"
-                onclick="printOnePhoto('Session_001_1.png')"
+                onclick="printOnePhoto('Session_001_1.jpg')"
                 style="border:none; cursor:pointer;">
                 Print This Photo
             </button>
